@@ -10,7 +10,8 @@
     "watch": "tsc -w",
     "prepare": "npm run clean && npm run compile",
     "test": "./node_modules/.bin/jest",
-    "test:smoke": "npm install && npm run compile && rm -rf node_modules && npm install --prod && node ./lib/cli.js && echo 'Smoke Test Passed'"
+    "test:smoke": "npm install && npm run compile && rm -rf node_modules && npm install --prod && node ./lib/cli.js && echo 'Smoke Test Passed'",
+    "postinstall": "tsc"
   },
   "repository": {
     "type": "git",
